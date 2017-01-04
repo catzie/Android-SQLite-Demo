@@ -20,6 +20,13 @@
         android:id="@+id/input_label"
         android:textAlignment="center"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Item"
+        android:textAlignment="center"
+        android:id="@+id/btn_add"/>
+
     <Spinner
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -27,49 +34,7 @@
         android:layout_alignParentLeft="true"
         ></Spinner>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Add Item"
-            android:textAlignment="center"
-            android:id="@+id/btn_add"/>
+
 
 </LinearLayout>
 
-<!--<RelativeLayout xmlns:android ="http://schemas.android.com/apk/res/android"-->
-<!--xmlns:tools="http://schemas.android.com/tools"-->
-<!--android:layout_width="match_parent"-->
-<!--android:layout_height="match_parent"-->
-<!--tools:context=".MainActivity" >-->
-
-<!--&lt;!&ndash; Label &ndash;&gt;-->
-<!--<TextView-->
-    <!--android:layout_width="fill_parent"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:text="Add New Label"-->
-    <!--android:padding="8dip" />-->
-
-<!--&lt;!&ndash; Input Text &ndash;&gt;-->
-<!--<EditText android:id="@+id/input_label"-->
-    <!--android:layout_width="fill_parent"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_marginLeft="8dip"-->
-    <!--android:layout_marginRight="8dip"/>-->
-
-<!--<Spinner-->
-    <!--android:id="@+id/spinner"-->
-    <!--android:layout_width="fill_parent"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_alignParentLeft="true"-->
-    <!--android:layout_below="@+id/btn_add"-->
-    <!--android:layout_marginTop="23dp" />-->
-
-<!--<Button-->
-    <!--android:id="@+id/btn_add"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_below="@+id/input_label"-->
-    <!--android:layout_centerHorizontal="true"-->
-    <!--android:text="Add Item" />-->
-
-<!--</RelativeLayout>-->
