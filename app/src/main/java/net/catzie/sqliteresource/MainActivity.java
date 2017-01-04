@@ -24,6 +24,7 @@ public class MainActivity extends Activity implements OnItemSelectedListener{
     Spinner spinner;
     Button btnAdd;
     EditText inputLabel;
+    List<String> labels;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -63,6 +64,7 @@ public class MainActivity extends Activity implements OnItemSelectedListener{
                     Toast.makeText(getApplicationContext(), "Please enter label name",
                             Toast.LENGTH_SHORT).show();
                 }
+                spinner.setSelection(labels.size()-1);
 
             }
         });
@@ -73,7 +75,7 @@ public class MainActivity extends Activity implements OnItemSelectedListener{
      * */
     private void loadSpinnerData() {
         DatabaseHandler db = new DatabaseHandler(getApplicationContext());
-        List<String> labels = db.getAllLabels();
+        labels = db.getAllLabels();
 
         // Creating adapter for spinner
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, labels);
